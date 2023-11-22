@@ -1,0 +1,27 @@
+[project]
+name = "minimizer"
+version = "0.0.1"
+authors = [
+    { name="Janik Kokot", email="janik@kokot.cc" },
+    ]
+description = "Graphically represent optimization algorithms for TC1 lecture."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    ]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    ]
+[project.scripts]
+minimize = "minimizer.min:main"
+visualize = "minimizer.visualize:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
